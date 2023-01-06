@@ -6,11 +6,17 @@ Hellsing Features
 -->Murder 4
 
 Start game
+
 Abort game
+
 Bystanders Win
+
 Murderer Win
+
 Self Murder
+
 Self Bystander
+
 Kill All
 
 
