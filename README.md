@@ -1,6 +1,5 @@
 # HellsingPc
 Hellsing Features
---------------------------------------------
 ---->WorldHacks
 
 -->Murder 4
@@ -55,4 +54,3 @@ Give roles Murder, Bystander and Detective
 Kill
 Eject
 Make Crew/Imposter
---------------------------------------------
