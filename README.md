@@ -17,10 +17,15 @@ Kill All
 -->Among Us
 
 Start Game
+
 Abort Game
+
 Imposters Win
+
 Crewmates Win
+
 Skip Vote
+
 Self Imposter/Crew
 
 
@@ -29,15 +34,19 @@ Self Imposter/Crew
 -->Pickups
 
 Force Pickups
+
 Respawn Pickups
+
 Yeet Pickups
-
-
 
 -->Movement
 
 Speed Hack
+
+Jump Hack
+
 Force Jump
+
 Fly
 
 
@@ -50,16 +59,21 @@ Esp
 E1
 
 ----> Select User
+
 Teleport
+
 Give All Item
 
 -->Murder 4 Target Stuff
 
 Kill, Flash
+
 Give roles Murder, Bystander and Detective
 
 -->Among Us Target Stuff
 
 Kill
+
 Eject
+
 Make Crew/Imposter
