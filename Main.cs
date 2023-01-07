@@ -22,7 +22,7 @@ namespace HellsingPc
 
     public class Main : MelonMod
     {
-        //Find custom loading music, bulk up client target and exploits menu, make antis, make spoofers, make client public when finished
+       
         public static bool Earrape = false;
         public static bool yeet;
         public static bool Fly;
