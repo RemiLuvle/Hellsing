@@ -14,6 +14,7 @@ namespace HellsingCore.ButtonAPI
         public static GameObject lable;
         public static TextMeshProUGUI text;
         public static void DebugMenu()
+            
         {
             lable = UnityEngine.Object.Instantiate<GameObject>(HellsingPc.Main.UserInterface.transform.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/Header_QuickLinks").gameObject, APIUtils.GetQMMenuTemplate().transform);
             lable.transform.localPosition = new Vector3(-0.0005f, 11.2451f, 12.6858f);
@@ -24,6 +25,7 @@ namespace HellsingCore.ButtonAPI
             lable.SetActive(true);
             text.text = "";
         }
+        
         public static void Message(string message)
         {
             text.text = DateTime.Now.ToString("(HH.mm.ss)") + message + "\n" + text.text;
