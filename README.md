@@ -99,6 +99,8 @@ credits too ikari for all the help
 
 Credits too BlackHyrax for the loading music
 
+Credits too ljoonal for the fps and ping spoofer(used it to learn a bit)
+
 its a mid ass client but im using it as a learning experience
 
 --------------------------------------------------
