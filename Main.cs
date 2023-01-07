@@ -440,8 +440,6 @@ namespace HellsingPc
             }
         }
 
-
-        //fix player list, custom loading screen music,Make nameplate stats
         public void onplayerleave(Player playr)
         {
             //DebugMenu
