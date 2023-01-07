@@ -1,4 +1,4 @@
-﻿using Harmony;
+using Harmony;
 using HellsingCore.API.QM;
 using HellsingCore.ButtonAPI;
 using HellsingPc.Exploits;
@@ -32,18 +32,6 @@ namespace HellsingPc
         public static bool toggledebug;
         public static bool toggleesp;
         public static bool Ui;
-        public int noUpdateCount;
-        public byte frames;
-        public byte ping;
-        public static MelonPreferences_Category PreferencesCategory;
-        public static MelonPreferences_Entry<float> PreferenceFPS, PreferenceFPSVariance;
-        public static MelonPreferences_Entry<int> PreferencePing, PreferencePingVariance, PreferencVarianceMin, PreferencVarianceMax;
-
-        public static float VarianceFPS = 0f;
-        public static int VariancePing = 0;
-        public System.DateTime _next_variance_update_after = System.DateTime.Now;
-
-        public const string PreferencesIdentifier = "NoDetailsForClienters";
         public static GameObject UserInterface;
 
         public override void OnUpdate()
