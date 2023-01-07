@@ -93,11 +93,11 @@ Make Crew/Imposter
 Credits
 -------------------------------------------------
 
-credits too nocturnal for the fly
+credits too nocturnal for the fly(Fix up?)
 
-credits too ikari for all the help
+credits too ikari for all the help(tought me how to code)
 
-Credits too BlackHyrax for the loading music
+Credits too BlackHyrax for the loading music(Pasted it💀)
 
 Credits too ljoonal for the fps and ping spoofer(used it to learn a bit)
 
