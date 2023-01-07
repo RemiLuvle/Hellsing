@@ -93,8 +93,6 @@ Make Crew/Imposter
 Credits
 -------------------------------------------------
 
-Credits too foonix for the e1 and nameplate
-
 credits too nocturnal for the fly
 
 credits too ikari for all the help
