@@ -97,6 +97,8 @@ credits too nocturnal for the fly
 
 credits too ikari for all the help
 
+Credits too BlackHyrax for the loading music
+
 its a mid ass client but im using it as a learning experience
 
 --------------------------------------------------
