@@ -83,3 +83,12 @@ Kill
 Eject
 
 Make Crew/Imposter
+
+
+Credits too foonix for the e1 and nameplate
+
+credits too nocturnal for the fly
+
+credits too ikari for all the help
+
+its a mid ass client but im using it as a learning experience
