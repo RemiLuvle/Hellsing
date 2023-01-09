@@ -11,3 +11,4 @@ Credits too BlackHyrax for the loading music(couldnt get it working so Pasted it
 its a mid ass client but im using it as a learning experience
 
 --------------------------------------------------
+https://discord.gg/7r928aKyGz
