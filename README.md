@@ -2,7 +2,7 @@
 Directions
 -------------------------------------------------
 
-**Folder and file go in vrchat/Mods**
+**Folder goes in base vrchat folder and dll goes in mods**
 
 -------------------------------------------------
 
