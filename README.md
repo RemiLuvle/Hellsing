@@ -2,7 +2,7 @@
 Directions
 -------------------------------------------------
 
-Folder and file go in vrchat/Mods
+**Folder and file go in vrchat/Mods**
 
 -------------------------------------------------
 
