@@ -2,6 +2,7 @@
 using HellsingCore.ButtonApi;
 using HellsingCore.ButtonAPI;
 using HellsingPc.Exploits;
+using HellsingPc.Menu;
 using HellsingPc.Misc;
 using MelonLoader;
 using RenderHeads.Media.AVProVideo;
@@ -219,7 +220,7 @@ namespace HellsingPc
             var PickupsMenu = new QMNestedButton(ExploitsMenu, 2, 0, "Pickups", "Pickups", "Pickups", true);
             var MovementsMenu = new QMNestedButton(ExploitsMenu, 2, 0.5f, "Movement", "Movement", "Movement", true);
             var VisualsMenu = new QMNestedButton(ExploitsMenu, 3, 0, "Visuals", "Visuals", "Visuals", true);
-            var SelfMenu = new QMNestedButton(ExploitsMenu, 3, 0.5f, "Self", "Self", "Self", true);
+            var SelfMenu = new QMNestedButton(ExploitsMenu, 4, 0, "Self", "Self", "Self", true);
 
             //WorldHacks Menu
             var WorldHacksMenu = new QMNestedButton(ExploitsMenu, 3, 0.5f, "WorldHack", "WorldHack", "WorldHack", true);
