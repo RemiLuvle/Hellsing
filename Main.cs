@@ -219,6 +219,8 @@ namespace HellsingPc
             var PickupsMenu = new QMNestedButton(ExploitsMenu, 2, 0, "Pickups", "Pickups", "Pickups", true);
             var MovementsMenu = new QMNestedButton(ExploitsMenu, 2, 0.5f, "Movement", "Movement", "Movement", true);
             var VisualsMenu = new QMNestedButton(ExploitsMenu, 3, 0, "Visuals", "Visuals", "Visuals", true);
+            var SelfMenu = new QMNestedButton(ExploitsMenu, 3, 0.5f, "Self", "Self", "Self", true);
+
             //WorldHacks Menu
             var WorldHacksMenu = new QMNestedButton(ExploitsMenu, 3, 0.5f, "WorldHack", "WorldHack", "WorldHack", true);
             var MurderHacksMenu = new QMNestedButton(WorldHacksMenu, 1, 0, "Muder4", "Muder4", "Muder4", true);
@@ -372,6 +374,45 @@ namespace HellsingPc
             {
                 HellsingPc.Exploits.Fly.togglefly(Fly);
             }, "", true);
+             MelonLogger.Msg("initialized Self Exploits!");
+
+            new QMToggleButton(SelfMenu, 1f, 0f, "Head Flipper", delegate ()
+            {
+                SelfShit.FlipHead();
+            }, delegate ()
+            {
+                SelfShit.ResetHead();
+            }, "Flip that shit", false);
+            new QMToggleButton(SelfMenu, 2f, 0f, "Hide Self", delegate ()
+            {
+                SelfShit.HideSelfOn();
+            }, delegate ()
+            {
+                SelfShit.HideSelfOff();
+            }, "Hide yourself locally", false);
+            new QMSingleButton(SelfMenu, 3f, 0f, "Avatar by ID", delegate ()
+            {
+                SelfShit.AVIID();
+            }, "Change Avatar By ID via your Clipboard", false);
+            new QMToggleButton(SelfMenu, 4f, 0f, "PC Crash", delegate ()
+            {
+                SelfShit.AssetKill();
+            }, delegate ()
+            {
+                SelfShit.AssetKillOff();
+            }, "Kills lobby with a PC Avatar", false);
+            new QMToggleButton(SelfMenu, 1f, 1f, "T-Pose", delegate ()
+            {
+                SelfShit.TPOSE();
+            }, delegate ()
+            {
+                SelfShit.TPOSE();
+            }, "", false);
+            new QMSingleButton(SelfMenu, 2f, 1f, "Default Avatar", delegate ()
+            {
+                SelfShit.DefaultAVI();
+            }, "Change Avatar By ID via your Clipboard", false);
+           
 
 
 
