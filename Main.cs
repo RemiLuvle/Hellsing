@@ -216,6 +216,27 @@ namespace HellsingPc
             {
                 VRCPlayer.field_Internal_Static_VRCPlayer_0.field_Private_VRCPlayerApi_0.TeleportTo(IUserExtension.SelectedVRCPlayer().transform.position, IUserExtension.SelectedVRCPlayer().transform.rotation);
             }, "", false);
+           
+          //Wip at the most
+            new QMSingleButton(TargetMenu, 1, 1, "Crash Portals [WIP]", () =>
+            {
+                GameObject portal = Networking.Instantiate(VRC_EventHandler.VrcBroadcastType.Always, "Portals/PortalInternalDynamic", IUserExtension.SelectedVRCPlayer().transform.position + IUserExtension.SelectedVRCPlayer().transform.forward * 1.505f, IUserExtension.SelectedVRCPlayer().transform.rotation);
+                string world = "wrld_5b89c79e-c340-4510-be1b-476e9fcdedcc";
+                string instance = "\n[Joe]\n" + IUserExtension.SelectedVRCPlayer().field_Private_APIUser_0.displayName + "\0" ;
+                System.Random r = new();
+                var values = new[] { -69, -666 };
+                int result = values[r.Next(values.Length)];
+                int count = result;
+                Networking.RPC(RPC.Destination.AllBufferOne, portal, "ConfigurePortal", new Il2CppSystem.Object[]
+                {
+              (Il2CppSystem.String)world,
+              (Il2CppSystem.String)instance,
+              new Il2CppSystem.Int32
+              {
+                m_value = count
+              }.BoxIl2CppObject()
+                });
+            }, "", true);
 
             #endregion
 
