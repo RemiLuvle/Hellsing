@@ -1,4 +1,5 @@
-﻿using HellsingCore.API.QM;
+﻿using Hellsing.Exploits;
+using HellsingCore.API.QM;
 using HellsingCore.ButtonApi;
 using HellsingCore.ButtonAPI;
 using HellsingPc.Exploits;
@@ -14,6 +15,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UIElements;
 using VRC;
+using VRC.Core;
 using VRC.SDKBase;
 using Color = UnityEngine.Color;
 using Player = VRC.Player;
@@ -84,6 +86,12 @@ namespace HellsingPc
             });
         }
 
+
+
+
+        private static void Hook(ref bool __0) => __0 = true;
+
+
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("=-----------------------------------------------------------=");
@@ -91,6 +99,10 @@ namespace HellsingPc
             MelonLogger.Msg("=----------------------=By Remi#0666=-----------------------=");
             MelonLogger.Msg("=-----------------------------------------------------------=");
 
+            var original = typeof(APIUser).GetProperty(nameof(APIUser.allowAvatarCopying)).GetSetMethod();
+            var method = typeof(Main).GetMethod(nameof(Main.Hook), BindingFlags.NonPublic | BindingFlags.Static);
+            var patch = new HarmonyLib.HarmonyMethod(method);
+            HarmonyInstance.Patch(original, patch);
             MelonCoroutines.Start(WaitForUI());
             IEnumerator WaitForUI()
             {
@@ -326,8 +338,7 @@ namespace HellsingPc
 
 
 
-
-            MelonLogger.Msg("[Pass] initialized Pickups Exploits!");
+           MelonLogger.Msg("[Pass] initialized Pickups Exploits!");
 
 
 
