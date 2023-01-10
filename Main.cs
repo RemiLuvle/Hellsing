@@ -275,10 +275,25 @@ namespace HellsingPc
                     MelonLogger.Msg("[Alert] Light Off");
                     Main.UserInterface.transform.Find("MenuContent/Backdrop/Avatar").gameObject.SetActive(false);
                 }
-
-
-
+              
             }, "", true);
+          
+            //Credits to WTFBlaze
+            new QMSingleButton(GeneralMenu, 2, 0, "Delete Portals", () =>
+            {
+                var deletedCount = 0;
+                foreach (var p in UnityEngine.Object.FindObjectsOfType<PortalInternal>())
+                {
+                    if (p.gameObject.name.StartsWith("(Clone ["))
+                    {
+                        UnityEngine.Object.Destroy(p.gameObject);
+                        deletedCount++;
+                    }
+                }
+                MelonLogger.Msg($"Globally Destroyed {deletedCount} portals!");
+                HellsingCore.ButtonAPI.Debug.Message($"Globally Destroyed <color=yellow>{deletedCount}</color> portals!");
+            }, "", true);
+
             //Pickups
             new QMSingleButton(PickupsMenu, 1, 0, "Bring Pickups", () =>
               {
