@@ -19,4 +19,3 @@ credits too WTFBlaze for the button api
 its a mid ass client but im using it as a learning experience
 
 --------------------------------------------------
-https://discord.gg/7r928aKyGz
