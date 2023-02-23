@@ -19,3 +19,8 @@ credits too WTFBlaze for the button api
 its a mid ass client but im using it as a learning experience
 
 --------------------------------------------------
+
+Plz if ur gonna use my code, give credit
+and remember kids dont be a skid like foonix
+
+--------------------------------------------------
