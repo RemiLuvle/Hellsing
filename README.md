@@ -10,7 +10,7 @@ Directions
 Credits
 -------------------------------------------------
 
-credits too nocturnal for the fly and playerwrappers
+credits too nocturnal for the fly
 
 Credits too BlackHyrax for the loading music(couldnt get it working so Pasted it💀)
 
