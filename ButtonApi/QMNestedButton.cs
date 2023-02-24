@@ -8,7 +8,8 @@ using UnityEngine.UI;
 using VRC.UI.Elements;
 using VRC.UI.Elements.Help;
 using VRC.UI.Elements.Menus;
-using TransitionType = VRC.UI.Elements.UIPage.TransitionType;
+using TransitionType = VRC.UI.Elements.UIPage;
+using static VRC.UI.Elements.UIPage;
 
 namespace HellsingCore.API.QM
 {
@@ -86,7 +87,7 @@ namespace HellsingCore.API.QM
         public void OpenMe()
         {
             MenuObject.SetActive(true);
-            APIUtils.MenuStateControllerInstance.Method_Public_Void_String_UIContext_Boolean_TransitionType_0(MenuPage.field_Public_String_0, null, false, TransitionType.Left);
+            APIUtils.MenuStateControllerInstance.Method_Public_Void_String_ObjectPublicStBoAc1ObObUnique_Boolean_EnumNPublicSealedvaNoLeRiBoIn6vUnique_0(MenuPage.field_Public_String_0, null, false, UIPage.EnumNPublicSealedvaNoLeRiBoIn6vUnique.Left); //Method_Public_Void_String_UIContext_Boolean_TransitionType_0
         }
 
         public void CloseMe()
