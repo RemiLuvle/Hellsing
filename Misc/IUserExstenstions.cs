@@ -12,7 +12,9 @@ namespace HellsingPc.Misc
 {
     public static class IUserExtension
     {
-        public static Player SelectedVRCPlayer() => APIUtils._userInterface.transform.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_SelectedUser_Local").GetComponentInChildren<SelectedUserMenuQM>().field_Private_IUser_0.prop_String_0.ReturnUserID();
+        public static Player SelectedVRCPlayer() => APIUtils._userInterface.transform.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_SelectedUser_Local").GetComponentInChildren<SelectedUserMenuQM>().field_Private_InterfacePublicAbstractStCoStBoObSt1BoSi1Unique_0.prop_String_0.ReturnUserID();
+        //public static Player SelectedVRCPlayer() => APIUtils._userInterface.transform.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_SelectedUser_Local").GetComponentInChildren<SelectedUserMenuQM>().field_Public_SelectedUserMenuQM_0.ReturnUserID; // field_Private_IUser_0.prop_String_0.ReturnUserID
+
         public static Player ReturnUserID(this string User)
         {
             foreach (Player player in PlayerManager.field_Private_Static_PlayerManager_0.field_Private_List_1_Player_0)
